@@ -8,13 +8,21 @@ void main() {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromARGB(19, 16, 67, 83),
-                Color.fromARGB(22, 33, 444, 55)
+                Color.fromARGB(255, 238, 42, 222),
+                Color.fromARGB(255, 90, 27, 82),
               ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
           ),
           child: const Center(
-            child: Text('Fabiha Atique '),
+            child: Text(
+              'Fabiha Atique ',
+              style: TextStyle(
+                color: Color.fromARGB(255, 238, 204, 227),
+                fontSize: 29,
+              ),
+            ),
           ),
         ),
       ),
