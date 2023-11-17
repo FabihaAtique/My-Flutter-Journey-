@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:custom_widgets/text_styling.dart';
+import 'package:adding_reuability/text_styling.dart';
 
 //defining the variables outside the class we can change the values from a single point and avoid complexity
 
@@ -25,7 +25,7 @@ class GradientContainer extends StatelessWidget {
           end: endAllignment,
         ),
       ),
-      child: const Center(child: styletext()),
+      child: const Center(child: styletext('Fabiha Atique')),
     );
   }
 }
