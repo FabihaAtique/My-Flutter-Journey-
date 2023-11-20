@@ -9,23 +9,24 @@ var beginAllignment = Alignment.topLeft;
 
 final endAllignment = Alignment.bottomLeft;
 
+
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  const GradientContainer( this.colors1,this.colors2, {super.key});
+
+  final Color colors1;
+  final Color colors2;
 
   @override
   Widget build(context) {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: const [
-            Color.fromARGB(255, 238, 42, 222),
-            Color.fromARGB(255, 90, 27, 82),
-          ],
+          colors: [colors1, colors2],
           begin: beginAllignment,
           end: endAllignment,
         ),
       ),
-      child: const Center(child: styletext('Fabiha Atique')),
+      child: const Center(child: styletext('Hello World')),
     );
   }
 }
